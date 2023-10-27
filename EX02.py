@@ -37,20 +37,3 @@ for row in items:
 
 
 
-
-stn2 = soup.find(id = 'tab2') #tab2僅逆行
-# print(stn)
-items = stn2.find_all('tr')[1:]
-print('逆行:')
-print()
-for row in items:
-    car = row.find('a').text
-    tds = row.find_all('td')
-    sp = row.find_all('span')
-    print('車次:',car)
-    print(sp[2].text,sp[3].text,sp[4].text)
-    print('出發時間',tds[1].text)
-    print('終點站',tds[2].text)
-    print('-'*30)
-
-
