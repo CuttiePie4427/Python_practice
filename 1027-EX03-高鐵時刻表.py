@@ -37,7 +37,13 @@ for row in items:
     print(row['DestinationTime'])
     print(row['Duration'])
     print()
-
+#作業<一>:列出停靠站
+    stn = row['StationInfo']
+    for sn in stn:
+        if sn['Show'] == True:
+            print(sn['StationName'])
+    
+    print()
     
     
     
